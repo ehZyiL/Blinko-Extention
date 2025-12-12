@@ -644,5 +644,133 @@
   "importFileTypeInvalid": {
     "message": "Only .json files are allowed for import.",
     "description": "Error message when import file type is invalid"
+  },
+  "insertPageLinkTooltip": {
+    "message": "Insert Page Link (Ctrl+L)",
+    "description": "Tooltip for insert page link button"
+  },
+  "tagSelectorTooltip": {
+    "message": "Tag Selector (Ctrl+Shift+T)",
+    "description": "Tooltip for tag selector button"
+  },
+  "insertTodoTooltip": {
+    "message": "Insert Todo Item",
+    "description": "Tooltip for insert todo button"
+  },
+  "insertCodeBlockTooltip": {
+    "message": "Insert Code Block",
+    "description": "Tooltip for insert code block button"
+  },
+  "insertQuoteTooltip": {
+    "message": "Insert Quote",
+    "description": "Tooltip for insert quote button"
+  },
+  "boldFormatTooltip": {
+    "message": "Bold Format",
+    "description": "Tooltip for bold format button"
+  },
+  "italicFormatTooltip": {
+    "message": "Italic Format",
+    "description": "Tooltip for italic format button"
+  },
+  "tagSelectorTitle": {
+    "message": "Tag Selector",
+    "description": "Title for tag selector panel"
+  },
+  "expandAllTooltip": {
+    "message": "Expand All",
+    "description": "Tooltip for expand all tags button"
+  },
+  "collapseAllTooltip": {
+    "message": "Collapse All",
+    "description": "Tooltip for collapse all tags button"
+  },
+  "closePanelTooltip": {
+    "message": "Close Panel",
+    "description": "Tooltip for close panel button"
+  },
+  "loadingTags": {
+    "message": "Loading tags...",
+    "description": "Loading message for tags"
+  },
+  "noTagsAvailable": {
+    "message": "No tags available",
+    "description": "Message when no tags are available"
+  },
+  "loadTagsFailed": {
+    "message": "Failed to load tags",
+    "description": "Error title when loading tags fails"
+  },
+  "authFailedCheckKey": {
+    "message": "Authentication failed, please check your auth key in settings",
+    "description": "Error message for authentication failure"
+  },
+  "cannotConnectTagService": {
+    "message": "Cannot connect to tag service, please check network and server configuration",
+    "description": "Error message when cannot connect to tag service"
+  },
+  "retryButton": {
+    "message": "Retry",
+    "description": "Retry button text"
+  },
+  "gettingPageLink": {
+    "message": "Getting page link...",
+    "description": "Status message when getting page link"
+  },
+  "linkInserted": {
+    "message": "Link inserted",
+    "description": "Success message when link is inserted"
+  },
+  "getLinkFailed": {
+    "message": "Failed to get link: $1",
+    "description": "Error message when getting link fails"
+  },
+  "cannotGetPageInfo": {
+    "message": "Cannot get current tab info",
+    "description": "Error when cannot get current tab"
+  },
+  "restrictedPageError": {
+    "message": "Cannot get link from this page (restricted page)",
+    "description": "Error for restricted pages"
+  },
+  "blinkoServerNotConfigured": {
+    "message": "Blinko server not configured",
+    "description": "Error when Blinko server is not configured"
+  },
+  "authTokenNotFound": {
+    "message": "API auth token not found, please configure auth key in settings",
+    "description": "Error when auth token is not found"
+  },
+  "allTagEndpointsFailed": {
+    "message": "All tag API endpoints failed. Last error: $1",
+    "description": "Error when all tag endpoints fail"
+  },
+  "apiResponseFormatError": {
+    "message": "API response format error, expected array, received: $1",
+    "description": "Error for invalid API response format"
+  },
+  "addAttachmentTooltip": {
+    "message": "Add Attachment",
+    "description": "Tooltip for add attachment button"
+  },
+  "uploadingAttachment": {
+    "message": "Uploading attachment...",
+    "description": "Status message when uploading attachment"
+  },
+  "attachmentUploaded": {
+    "message": "Attachment uploaded",
+    "description": "Success message when attachment is uploaded"
+  },
+  "attachmentUploadFailed": {
+    "message": "Upload failed: $1",
+    "description": "Error message when attachment upload fails"
+  },
+  "insertUnorderedListTooltip": {
+    "message": "Insert Unordered List",
+    "description": "Tooltip for unordered list button"
+  },
+  "insertOrderedListTooltip": {
+    "message": "Insert Ordered List",
+    "description": "Tooltip for ordered list button"
   }
 }

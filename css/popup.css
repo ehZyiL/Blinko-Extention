@@ -516,6 +516,37 @@ a:hover {
     font-weight: 500;
 }
 
+.attachment-actions {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.add-attachment-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 24px;
+    height: 24px;
+    padding: 0;
+    border: 1px solid var(--input-border-color);
+    border-radius: 4px;
+    background: var(--button-secondary-bg);
+    color: var(--text-color-secondary);
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.add-attachment-btn:hover {
+    background: var(--button-secondary-hover-bg);
+    color: var(--text-color-primary);
+    border-color: var(--input-focus-border-color);
+}
+
+.add-attachment-btn:active {
+    transform: scale(0.95);
+}
+
 .attachment-items {
     display: flex;
     flex-wrap: wrap;
@@ -644,4 +675,306 @@ a:hover {
 #domainMappingsListContainer ul li span {
     color: var(--text-color-secondary);
     /* Add other styles if needed, e.g., for alignment or spacing */
+}
+
+/* ==================== 增强快捷记录工具栏样式 ==================== */
+
+.enhanced-toolbar {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 4px;
+    margin: 8px 0;
+    padding: 8px 12px;
+    background: var(--setting-group-bg);
+    border-radius: 8px;
+    border: 1px solid var(--input-border-color);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+    position: relative;
+}
+
+.toolbar-section {
+    display: flex;
+    gap: 4px;
+    align-items: center;
+    position: relative;
+}
+
+.toolbar-btn {
+    padding: 6px;
+    border: 1px solid transparent;
+    background: transparent;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    width: 28px;
+    height: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-color-secondary);
+}
+
+.toolbar-btn:hover {
+    background: var(--button-secondary-hover-bg);
+    color: var(--text-color-primary);
+    border-color: var(--input-border-color);
+    transform: translateY(-1px);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.toolbar-btn:active {
+    transform: translateY(0);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+/* ==================== 标签面板样式 ==================== */
+
+.tag-panel {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    background: var(--tab-content-bg);
+    border: 1px solid var(--input-border-color);
+    border-radius: 8px;
+    margin-top: 4px;
+    max-height: 250px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    display: flex;
+    flex-direction: column;
+}
+
+.tag-panel-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 16px;
+    background: var(--setting-group-bg);
+    border-bottom: 1px solid var(--input-border-color);
+    flex-shrink: 0;
+}
+
+.tag-panel-title {
+    font-weight: 600;
+    font-size: 14px;
+    color: var(--text-color-primary);
+}
+
+.tag-panel-controls {
+    display: flex;
+    gap: 4px;
+    align-items: center;
+}
+
+.control-btn {
+    background: none;
+    border: 1px solid transparent;
+    cursor: pointer;
+    padding: 4px;
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    transition: all 0.2s ease;
+    color: var(--text-color-secondary);
+}
+
+.control-btn:hover {
+    background: var(--button-secondary-hover-bg);
+    border-color: var(--input-border-color);
+    color: var(--text-color-primary);
+}
+
+.control-btn:active {
+    transform: scale(0.95);
+}
+
+.tag-panel-content {
+    flex: 1 1 0;
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding: 8px 12px;
+    min-height: 0;
+    max-height: 200px;
+}
+
+.tag-panel-content::-webkit-scrollbar {
+    width: 6px;
+}
+
+.tag-panel-content::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.tag-panel-content::-webkit-scrollbar-thumb {
+    background: var(--scrollbar-thumb-bg);
+    border-radius: 3px;
+}
+
+.tag-panel-content::-webkit-scrollbar-thumb:hover {
+    background: var(--text-color-tertiary);
+}
+
+/* ==================== 标签树样式 ==================== */
+
+.tag-tree {
+    font-size: 13px;
+    line-height: 1.4;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.tag-item {
+    margin: 1px 0;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.tag-row {
+    display: flex;
+    align-items: center;
+    min-height: 32px;
+    transition: all 0.2s ease;
+    width: 100%;
+    box-sizing: border-box;
+    padding-right: 8px;
+}
+
+.tag-expand-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 4px;
+    margin-right: 6px;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 3px;
+    transition: all 0.2s ease;
+    color: var(--text-color-secondary);
+    font-size: 11px;
+    flex-shrink: 0;
+}
+
+.tag-expand-btn:hover {
+    background: var(--button-secondary-hover-bg);
+    color: var(--text-color-primary);
+}
+
+.tag-expand-btn.expanded {
+    color: var(--link-color);
+}
+
+.tag-spacer {
+    width: 20px;
+    height: 20px;
+    margin-right: 6px;
+    display: inline-block;
+    flex-shrink: 0;
+}
+
+.tag-content {
+    display: flex;
+    align-items: center;
+    padding: 6px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: all 0.2s ease;
+    flex: 1;
+    min-height: 24px;
+    min-width: 0;
+    box-sizing: border-box;
+}
+
+.tag-content:hover {
+    background: var(--button-secondary-hover-bg);
+    color: var(--link-color);
+}
+
+.tag-content:active {
+    background: var(--input-focus-shadow);
+    transform: scale(0.98);
+}
+
+.tag-icon {
+    margin-right: 8px;
+    font-size: 12px;
+    opacity: 0.8;
+    flex-shrink: 0;
+}
+
+.tag-name {
+    flex: 1;
+    font-weight: 500;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    min-width: 0;
+}
+
+.tag-children {
+    border-left: 2px solid var(--input-border-color);
+    margin-left: 10px;
+    padding-left: 4px;
+    transition: all 0.3s ease;
+    width: calc(100% - 14px);
+    box-sizing: border-box;
+}
+
+.tag-item.expanded > .tag-children {
+    border-left-color: var(--link-color);
+}
+
+.tag-loading, .tag-empty-message {
+    text-align: center;
+    padding: 20px;
+    color: var(--text-color-secondary);
+    font-size: 14px;
+}
+
+.tag-error {
+    text-align: center;
+    padding: 20px;
+}
+
+.tag-error .error-message {
+    color: var(--status-error-text);
+    font-weight: 600;
+    margin-bottom: 4px;
+}
+
+.tag-error .error-detail {
+    color: var(--text-color-secondary);
+    font-size: 12px;
+    margin-bottom: 8px;
+}
+
+.tag-error .error-actions {
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+    margin-top: 12px;
+}
+
+.retry-btn {
+    padding: 6px 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 12px;
+    background: var(--link-color);
+    color: white;
+    transition: background-color 0.2s ease;
+}
+
+.retry-btn:hover {
+    opacity: 0.9;
 }

@@ -632,5 +632,133 @@
   "importFileTypeInvalid": {
     "message": "只能导入.json格式的文件",
     "description": "导入文件类型无效时的错误消息"
+  },
+  "insertPageLinkTooltip": {
+    "message": "插入页面链接 (Ctrl+L)",
+    "description": "插入页面链接按钮提示"
+  },
+  "tagSelectorTooltip": {
+    "message": "标签选择器 (Ctrl+Shift+T)",
+    "description": "标签选择器按钮提示"
+  },
+  "insertTodoTooltip": {
+    "message": "插入待办事项",
+    "description": "插入待办事项按钮提示"
+  },
+  "insertCodeBlockTooltip": {
+    "message": "插入代码块",
+    "description": "插入代码块按钮提示"
+  },
+  "insertQuoteTooltip": {
+    "message": "插入引用",
+    "description": "插入引用按钮提示"
+  },
+  "boldFormatTooltip": {
+    "message": "粗体格式",
+    "description": "粗体格式按钮提示"
+  },
+  "italicFormatTooltip": {
+    "message": "斜体格式",
+    "description": "斜体格式按钮提示"
+  },
+  "tagSelectorTitle": {
+    "message": "标签选择器",
+    "description": "标签选择器面板标题"
+  },
+  "expandAllTooltip": {
+    "message": "展开全部",
+    "description": "展开全部标签按钮提示"
+  },
+  "collapseAllTooltip": {
+    "message": "收起全部",
+    "description": "收起全部标签按钮提示"
+  },
+  "closePanelTooltip": {
+    "message": "关闭面板",
+    "description": "关闭面板按钮提示"
+  },
+  "loadingTags": {
+    "message": "正在加载标签...",
+    "description": "加载标签时的提示"
+  },
+  "noTagsAvailable": {
+    "message": "暂无标签",
+    "description": "没有标签时的提示"
+  },
+  "loadTagsFailed": {
+    "message": "加载标签失败",
+    "description": "加载标签失败时的错误标题"
+  },
+  "authFailedCheckKey": {
+    "message": "认证失败，请检查设置中的认证密钥是否正确",
+    "description": "认证失败时的错误消息"
+  },
+  "cannotConnectTagService": {
+    "message": "无法连接到标签服务，请检查网络连接和服务器配置",
+    "description": "无法连接标签服务时的错误消息"
+  },
+  "retryButton": {
+    "message": "重试",
+    "description": "重试按钮文本"
+  },
+  "gettingPageLink": {
+    "message": "正在获取页面链接...",
+    "description": "获取页面链接时的状态消息"
+  },
+  "linkInserted": {
+    "message": "链接已插入",
+    "description": "链接插入成功时的消息"
+  },
+  "getLinkFailed": {
+    "message": "获取链接失败: $1",
+    "description": "获取链接失败时的错误消息"
+  },
+  "cannotGetPageInfo": {
+    "message": "无法获取当前标签页信息",
+    "description": "无法获取当前标签页时的错误"
+  },
+  "restrictedPageError": {
+    "message": "无法获取该页面链接（受限页面）",
+    "description": "受限页面的错误消息"
+  },
+  "blinkoServerNotConfigured": {
+    "message": "未找到Blinko服务器配置",
+    "description": "未配置Blinko服务器时的错误"
+  },
+  "authTokenNotFound": {
+    "message": "未找到API认证令牌，请在设置中配置认证密钥",
+    "description": "未找到认证令牌时的错误"
+  },
+  "allTagEndpointsFailed": {
+    "message": "所有标签API端点都失败了。最后的错误: $1",
+    "description": "所有标签端点失败时的错误"
+  },
+  "apiResponseFormatError": {
+    "message": "API返回数据格式错误，期望数组格式，实际收到: $1",
+    "description": "API响应格式错误时的消息"
+  },
+  "addAttachmentTooltip": {
+    "message": "添加附件",
+    "description": "添加附件按钮提示"
+  },
+  "uploadingAttachment": {
+    "message": "正在上传附件...",
+    "description": "上传附件时的状态消息"
+  },
+  "attachmentUploaded": {
+    "message": "附件已上传",
+    "description": "附件上传成功时的消息"
+  },
+  "attachmentUploadFailed": {
+    "message": "上传失败: $1",
+    "description": "附件上传失败时的错误消息"
+  },
+  "insertUnorderedListTooltip": {
+    "message": "插入无序列表",
+    "description": "无序列表按钮提示"
+  },
+  "insertOrderedListTooltip": {
+    "message": "插入有序列表",
+    "description": "有序列表按钮提示"
   }
 }

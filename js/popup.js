@@ -3,6 +3,7 @@ import { initializeUIListeners, showStatus, hideStatus } from './ui.js';
 import { loadQuickNote, initializeQuickNoteListeners } from './quickNote.js';
 import { checkSummaryState, initializeSummaryListeners, handleSummaryResponse } from './summary.js';
 
+
 let prefersColorSchemeWatcher = null;
 
 // 应用主题
@@ -120,6 +121,7 @@ document.addEventListener('DOMContentLoaded', async function() {
         initializeUIListeners();
         initializeQuickNoteListeners();
         initializeSummaryListeners();
+
 
         // 绑定提取网页正文按钮事件
         document.getElementById('extractContent').addEventListener('click', async () => {

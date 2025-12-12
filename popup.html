@@ -47,9 +47,20 @@
             <div id="attachmentList" class="attachment-list">
                 <div class="attachment-header">
                     <span class="attachment-title">__MSG_attachmentListTitle__</span>
-                    <button id="clearAttachments" class="clear-button" style="display: none;">__MSG_clearAllButton__</button>
+                    <div class="attachment-actions">
+                        <button class="add-attachment-btn" id="addAttachment" title="__MSG_addAttachmentTooltip__">
+                            <svg fill="currentColor" height="14" viewBox="0 0 16 16" width="14">
+                                <path
+                                        d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/>
+                            </svg>
+                        </button>
+                        <button class="clear-button" id="clearAttachments" style="display: none;">
+                            __MSG_clearAllButton__
+                        </button>
+                    </div>
                 </div>
                 <div id="attachmentItems" class="attachment-items"></div>
+                <input accept="image/*" id="attachmentInput" multiple style="display: none;" type="file">
             </div>
             <div class="button-group">
                 <button id="sendQuickNote" class="send-button">__MSG_sendButton__</button>
